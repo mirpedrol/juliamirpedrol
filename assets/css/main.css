@@ -3576,6 +3576,10 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+		#header .nologo {
+			padding: 1rem 1.75rem;
+		}
+
 			#header .logo:hover {
 				border-color: #B7C396 !important;
 				color: #B7C396 !important;
