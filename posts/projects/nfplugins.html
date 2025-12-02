@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
+		<title>Nextflow plugins</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
@@ -41,16 +41,36 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h1>This is a<br />
-									Generic Page</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<span class="date">Developing Nextflow plugins</span>
+									<h1>Learning new languages</h1>
+									<p>Groovy adventures in workflow engineering. Learning how workflows work under the hood.</p>
 								</header>
 								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<p>
+									In nf-core, pipelines were using a JSON schema to describe the pipelne parameters.
+									Nextflow itself doesn't have a built-in way to validate the parameters, so we created a plugin to do so. <br><br>
+
+									I was involved in the development of the <a href="https://nextflow-io.github.io/nf-schema/latest/nextflow_schema/">nf-schema plugin</a> (previously known as nf-validation).
+									Later on, the validation of an input samplesheet was added to the plugin.<br><br>
+									
+									I also joined the initial efforts to create the <a href="https://nextflow-io.github.io/nf-co2footprint/">nf-co2footprint plugin</a>.
+									This plugin is used to calculate the carbon footprint of a pipeline.
+									This was a nice project contributing to the awareness of the environmental impact of computing. 🌿<br><br>
+
+									⚙️ Some technical aspects:<br>
+								</p>
+
+								<div class="row">
+									<div class="col-12-small">
+										<ul>
+											<li>Nextflow plugins are written in Groovy</li>
+											<li>JSON Schema is used as the structural base for parameter validation. And it is also used to render the nf-core website, pipeline help messages and logs.</li>
+											<li>The CO₂ plugin tracks execution metrics and resource usage, which are obtained from the Nextflow execution engine.</li>
+											<li>A report is generated with HTML, mimicking the Nextflow execution report.</li>
+											<li>The documentation of both plugins is written in Markdown and rendered with <a href="https://www.mkdocs.org/">MkDocs</a>.</li>
+										</ul>
+									</div>
+								</div>
 							</section>
 
 					</div>
