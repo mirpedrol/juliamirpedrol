@@ -3224,7 +3224,6 @@ input, select, textarea {
 		transition: opacity 0.5s ease;
 		position: relative;
 		z-index: 1;
-		overflow: hidden;
 	}
 
 		#wrapper > .bg {
@@ -3615,20 +3614,29 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		-moz-transition:
+		-moz-transform 1s ease,
+		opacity 1s ease;
+		-webkit-transition:
+		-webkit-transform 1s ease,
+		opacity 1s ease;
+		-ms-transition:
+		-ms-transform 1s ease,
+		opacity 1s ease;
+		transition:
+		transform 1s ease,
+		opacity 1s ease;
+		background: #464d52;
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
 		padding: 0 2rem 0 0;
-		position: relative;
+		position: sticky;
+		top: 0;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 20;
 	}
 
 		#nav ul.divided li {
