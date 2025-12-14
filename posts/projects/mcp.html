@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Learning about MCPs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<p class="nologo"></p>
+				</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="../../index.html">About</a></li>
+						<li><a href="../../projects.html">Projects</a></li>
+						<li><a href="../../story.html">My story</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/juliamirpedrol/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/mirpedrol" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Developing an MCP</span>
+									<h1>Learning new trends</h1>
+									<p>LLMs and MCPs. From a fun hackathon project to a real scientific collaboration.</p>
+								</header>
+								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
+								<p>
+									I was a bit skeptical about LLMs until I learnt about MCP servers, 
+									which are basically collections of tools that LLMs can use to interact with the world,
+									and avoid hallucination!<br><br>
+
+									I was recommended to do <a href="https://huggingface.co/learn/mcp-course/unit0/introduction">a course</a> about MCPs from Huggingface,
+									and conveniently, right when I was finishing the course, 
+									they organised an MCP hackathon!<br><br>
+
+									With some colleagues from my lab we decided to join.
+									Since I was working on a project where I want to tag all <a href="https://github.com/nf-core/modules">nf-core module</a> with <a href="https://edamontology.github.io/edam-browser/">EDAM ontologies</a>,
+									we thought that this would be a very good task for an LLM agent,
+									<a href="https://huggingface.co/spaces/asthara/agentontology">so we created it</a>!<br><br>
+
+									We didn't have much time to dedicate to this,
+									we decided to book three days to learn and experiment,
+									and we ended up with a very nice product that was working better than just ChatGPT.<br>
+									As it usually happens during hackathons, 
+									having a team of people focused on a single project and collaborating together really boosts learning and making progress.
+									[Side note: we did the submission wrong, otherwise I am sure we would have won 😂]<br><br>
+
+									Some weeks later, during the 2025 ISMB/ECCB,
+									we found out that a team of the Bioconductor and EDAM communities was working on a similar task,
+									they wanted to tag Bioconductor packages with ontology terms.
+									We talked and thought that it was a great opportunity for collaboration!
+									And we created the <a href="https://github.com/edamontology/edammcp">edamMCP</a>.
+
+									⚙️ Some technical aspects:<br>
+								</p>
+
+								<div class="row">
+									<div class="col-12-small">
+										<ul>
+											<li>The original agent used some custom Python functions, and the <code>smolagents</code> library.</li>
+											<li>The <code>edammcp</code> MCP uses <code>FastMCP</code> to build the server and other libraries
+											such as <code>sentence-transformers</code> for concept embedding.</li>
+											<li>Everything is open source 🔓</li>
+											<li>This is still under development, reach out if you would like to participate!</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<h3>Email</h3>
+						<p><p>mirp.julia@gmail.com</p></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/juliamirpedrol/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/mirpedrol" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Júlia Mir Pedrol</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
